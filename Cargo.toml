@@ -1,8 +1,10 @@
 [package]
 name = "seald"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
 description = "Encrypt or decrypt files with seald"
+license = "AGPL-3.0-only"
+repository = "https://github.com/daniel-zahariev/seald"
 
 [lib]
 name = "seald"

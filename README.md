@@ -18,6 +18,47 @@ It is useful for developers, SRE/DevOps engineers, and operations teams that nee
 - Supports file paths and stdio streams (`-` for stdin/stdout).
 - Uses Argon2-based key derivation with selectable presets and explicit KDF knobs.
 
+See [`FORMAT.md`](./FORMAT.md) for the `.sld` file format details.
+
+## Install
+
+### Cargo
+
+```bash
+cargo install seald
+```
+
+### Homebrew
+
+```bash
+brew tap daniel-zahariev/tap
+brew install daniel-zahariev/tap/seald
+```
+
+Or in a single command:
+
+```bash
+brew install daniel-zahariev/tap/seald
+```
+
+Upgrade later with:
+
+```bash
+brew upgrade daniel-zahariev/tap/seald
+```
+
+### APT (Debian/Ubuntu)
+
+```bash
+curl -fsSL https://daniel-zahariev.github.io/seald/apt/seald-archive-keyring.gpg \
+  -o /tmp/seald-archive-keyring.gpg
+sudo install -o root -g root -m 0644 /tmp/seald-archive-keyring.gpg /usr/share/keyrings/seald-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/seald-archive-keyring.gpg] https://daniel-zahariev.github.io/seald/apt stable main" \
+  | sudo tee /etc/apt/sources.list.d/seald.list >/dev/null
+sudo apt update
+sudo apt install seald
+```
+
 ## Build
 
 ```bash
