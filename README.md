@@ -141,3 +141,6 @@ Or provide explicit knobs:
 - `--kdf-parallelism`
 
 When explicit KDF values are provided, they override preset defaults.
+
+---
+_Footnote: This project is not affiliated with, endorsed by, or connected to Seald Sas ([seald.io](https://www.seald.io/))._
