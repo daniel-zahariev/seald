@@ -1,0 +1,22 @@
+[package]
+name = "seald"
+version = "0.1.0"
+edition = "2021"
+description = "Encrypt or decrypt files with seald"
+
+[lib]
+name = "seald"
+path = "src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "seald"
+path = "src/main.rs"
+
+[dependencies]
+argon2 = "0.5"
+chacha20poly1305 = { version = "0.10", features = ["std"] }
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+rpassword = "7"
+zeroize = "1"

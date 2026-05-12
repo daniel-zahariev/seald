@@ -1,0 +1,9 @@
+/target
+/local
+/examples
+/bindings
+/include
+
+**/*.rs.bk
+**/node_modules
+.pnpm-store
