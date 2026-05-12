@@ -1,9 +1,7 @@
 use std::cell::RefCell;
 use std::ffi::{CStr, CString};
-use std::fs::File;
+use std::fs::{File, OpenOptions};
 use std::io::{self, BufReader, BufWriter, ErrorKind, Read, Write};
-#[cfg(unix)]
-use std::fs::OpenOptions;
 #[cfg(unix)]
 use std::os::unix::fs::{OpenOptionsExt, PermissionsExt};
 use std::os::raw::c_char;
